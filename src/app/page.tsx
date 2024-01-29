@@ -1,8 +1,6 @@
-'use client';
-import React from 'react';
 import Image from 'next/image'
 import { FC } from 'react';
-
+import LikeButton from './like-button';
 interface TitleProp {
   title: string;
 }
@@ -14,11 +12,7 @@ function Header(title: TitleProp) {
 
 export default function Home() {
   const names = ["Ada Lovelace", "Grace Hopper", "Margaret Hamilton"];
-  const [likes, setLikes] = React.useState(0);
-
-  function handleClick() {
-    setLikes(likes + 1);
-  }
+  
   return (
     <div>
         <Header title="React"/>
@@ -28,7 +22,7 @@ export default function Home() {
             <li key={name}>{name}</li>
           ))}
         </ul>
-        <button onClick={handleClick}>Likes({likes})</button>
+        <LikeButton />
     </div>
     /*<main className="flex min-h-screen flex-col items-center justify-between p-24">
       {
