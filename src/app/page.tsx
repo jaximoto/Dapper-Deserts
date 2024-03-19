@@ -10,7 +10,7 @@ interface TitleProp {
 export default function Home() {
   return (
     
-    <div className="flex">
+    <div className="flex flex-col">
       <Title />
       <Sidebar />
     </div>
