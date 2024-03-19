@@ -1,7 +1,7 @@
 
 export default function Title() {
     return(
-        <div className="relative h-24 w-screen
+        <div className="relative  h-24 w-screen
                         flex flex-row gap-12
                         justify-center
                         align-text-middle

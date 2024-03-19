@@ -1,5 +1,5 @@
 
-export default function Sidebar() {
+export default function Navbar() {
     return(
         <div className="relative h-12 w-screen
                         flex flex-row 
@@ -9,6 +9,7 @@ export default function Sidebar() {
                         items-center
                         bg-[#B7A38B] text-white
                         font-sans
+                        border-solid border-2 border-white
                         shadow-lg
                         text-2xl
                         

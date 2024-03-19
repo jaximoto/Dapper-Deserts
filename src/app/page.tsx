@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { FC } from 'react';
 import LikeButton from './like-button';
-import Sidebar from './sidebar';
+import Navbar from './navbar';
 import Title from './title';
 interface TitleProp {
   title: string;
@@ -12,7 +12,7 @@ export default function Home() {
     
     <div className="flex flex-col">
       <Title />
-      <Sidebar />
+      <Navbar />
     </div>
     
   )
