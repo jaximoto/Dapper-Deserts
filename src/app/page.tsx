@@ -3,6 +3,7 @@ import { FC } from 'react';
 import LikeButton from './like-button';
 import Navbar from './navbar';
 import Title from './title';
+import Hamburger from './hamburger';
 interface TitleProp {
   title: string;
 }
@@ -10,9 +11,10 @@ interface TitleProp {
 export default function Home() {
   return (
     
-    <div className="flex flex-col">
-      <Title />
-      <Navbar />
+    <div className="flex flex-col h-screen">
+      <Title/>
+      <Navbar/>
+      <Hamburger/>
     </div>
     
   )
