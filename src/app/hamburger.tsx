@@ -1,5 +1,6 @@
 'use client'
 import React, { useState } from 'react';
+import Link from 'next/link';
 
 export default function Hamburger()
 {
@@ -10,7 +11,7 @@ export default function Hamburger()
         setIsOpen(!isOpen);
     }
     return(
-        <div className='fixed'>
+        <div className=' BUTTON CONTAINER fixed'>
             <button onClick={handleClick}
             className='flex flex-col justify-center
             items-center gap-y-1 h-7 w-7 bg-slate-100 rounded-sm'>
@@ -34,8 +35,8 @@ export default function Hamburger()
 
                         </span>
             </button>
-            <div className={`bg-slate-100 h-screen w-96 ${isOpen ? 'flex' : 'hidden'}`}>
-                            
+            <div className={`MENU bg-slate-100 h-screen w-96 ${isOpen ? 'flex' : 'hidden'}`}>
+                <Link href='/order'>Order</Link>
 
             </div>
         </div>
